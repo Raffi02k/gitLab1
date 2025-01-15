@@ -1,0 +1,26 @@
+Detta är fix2
+# 1. Skapa och växla till feature2 gren
+git checkout -b feature2
+
+# 2. Skapa filen fix1.txt och gör första commiten
+touch fix1.txt
+git add fix1.txt
+git commit -m "Lägger till fix1.txt"
+
+# 3. Skapa filen fix2.txt och gör andra commiten
+touch fix2.txt
+git add fix2.txt
+git commit -m "Lägger till fix2.txt"
+
+# 4. Byt tillbaka till main-grenen
+git checkout main
+
+# 5. Visa att filerna fix1.txt och fix2.txt inte finns längre
+ls
+
+# 6. Utför cherry-pick för att ta med commit som lägger till fix2.txt från feature2
+git cherry-pick <commit-id-for-fix2>
+
+# 7. Verifiera att fix2.txt är tillbaka på main
+ls
+
