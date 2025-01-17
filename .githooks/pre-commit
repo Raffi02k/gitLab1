@@ -1,0 +1,5 @@
+#!/bin/bash
+if grep -r --include=\*.{js,ts} "console.log" .; then
+    echo "🚨 Error: Remove console.log statements before committing!"
+    exit 1
+fi
