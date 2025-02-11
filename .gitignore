@@ -43,8 +43,7 @@ build/
 
 # Ignorera alla filer i katalogerna out och target
 out/
-target/
+target/*
 
 # Undantag: Tillåt HTML-filer i target-katalogen
 !target/**/*.html
-
